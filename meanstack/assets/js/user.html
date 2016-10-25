@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Nodejs</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="http://localhost:8085/js/app.js"></script>
+</head>
+<body ng-app="myapp" ng-controller="app2Ctrl">
+	<p>Welcome user</p>
+	<form role="form" ng-submit="submit(form)">
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email" ng-model="form.emailid">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" ng-model ="form.password">
+  </div>
+  <div class="form-group">
+    <label for="username">Username:</label>
+    <input type="text" class="form-control" id="user" ng-model ="form.username">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" ng-model="form.chekcbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default" >Submit</button>
+  <input type="button" id="login" value="view" ng-click="view(form)" />
+</form>
+ <input type="button" value= "sendemail" ng-click ="mail(form)"/>
+	
+	Students data :{{students_data}}
+</body>
+</html>

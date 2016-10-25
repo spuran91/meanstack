@@ -1,0 +1,55 @@
+<html >
+<head>
+	<title>Angular</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="http://localhost:8085/js/app.js"></script>
+</head>
+<body ng-app="myapp"  ng-controller="appCtrl">
+<p>MEAN STACK APPLICATION</p>
+<form  role="form" ng-submit="submit(form)"> 
+<table class="table table-condensed"  border="1" style="border-collapse:collapse;">
+ <tbody>
+ <tr id="row1">
+  <td>
+  First:<i class="glyphicon glyphicon-user"></i> <input type ="text" ng-model="form.firstname">
+  </td>
+  <td>
+  Last:<i class="glyphicon glyphicon-user"></i> <input type="text" ng-model="form.lastname">
+  </td>
+ </tr>
+ <tr>
+ <td>
+  Address:<input type = "text" ng-model="form.address"><span class="glyphicon glyphicon-map-marker"></span>
+  </td>
+  <td>
+  Zipcode:<input type = "text" ng-model="form.zipcode"><span class="glyphicon glyphicon-map-marker"></span>
+  </td>
+ </tr>
+ <tr id="row2">
+  
+  <td>
+  City : <input type="text" ng-model="form.city">
+  </td>
+  <td>
+  State : <input type="text" ng-model="form.state">
+  </td>
+ </tr>
+  <tr id ="row3">
+  <td>  
+  PhoneNumber: <input type="text" ng-model="form.phonenumber"><span class="glyphicon glyphicon-phone"></span>
+  </td>
+  <td>
+  username: <input type="text" ng-model="form.username">
+  </td>
+  </tr>
+ </tbody>
+</table>
+
+ <button type="submit">submit</button>
+</form>
+
+
+</body>
